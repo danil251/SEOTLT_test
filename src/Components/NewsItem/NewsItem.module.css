@@ -1,0 +1,53 @@
+.addContainer {
+    min-height: 70px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 20px 40px;
+    background-image: url("https://img.freepik.com/premium-photo/a-old-newspaper-background_1235831-188976.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    user-select: none;
+    position: relative;
+}
+
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .2);
+    opacity: 0;
+    transition: .5s;
+}
+
+.mask:hover {
+    opacity: 1;
+}
+
+.add {
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.btn {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    .add {
+        font-size: 20px;
+    }
+}
